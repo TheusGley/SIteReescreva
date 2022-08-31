@@ -1,4 +1,4 @@
-<?php 
+<?php      include("conexaobd.php");
 ?>
 <!DOCTYPE html>
 <html lang="PT-BR">
@@ -11,15 +11,27 @@
 
     <link rel="stylesheet" type="text/css" href="custom.css">
 
+    
+
 </head>
-<body>
+<body style="background-color: rgb(7, 39, 65);">
+    <div  class="container2">
+    <label   style="font-size:40px; font-family:cursive; margin-top: 30%; margin-left: 25%; " > Re-Escreva </label> 
+    </div>
+    <div class="container">
+    
 
     <div class="container" > 
+
     <div class="box">
-    <form action="post" id="form1">
+
+    <form action="reda.php" id="form1">
     <div class="borda">
-    <h1 class="titulo" > Login </h1>
+
+    <h2 class="titulo" > Login </h1>
+
     </div>
+
     <label class="font"> Nome de usuario</label>
     <br>
     <input  type="login" required > 
@@ -28,10 +40,16 @@
     <label class="font"> Senha </label>
     <br>
     <input   type="password" required>
-    
-<button  type="submit" form="form1" value="Submit">Entrar</button>
+    <br><br>
+    <p>
+    <a  href="passrec.php"> Esqueci minha senha</a>
+    <br>
+    <a href="cadastro.php"> Cadastrar </a>
+    </p>
+    <button class="button" type="submit" form="form1" value="Submit">Entrar</button>
 </div>
-    </div>
+
+</div>
     </form>
     
 </body>
